@@ -1,4 +1,6 @@
 var firstError = "";
+
+
 var errorCount = 0;
 
 window.onload = function () {
