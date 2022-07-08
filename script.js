@@ -15,7 +15,7 @@ function validateForm(event) {
     var middleNa = document.getElementById("middleName");
     var lastNa = document.getElementById("lastName");
 
-    var gender = document.getElementById("gender");
+    // var gender = document.getElementById("gender");
     var status = document.getElementById('maritalStatus');
 
     var spouseNa = document.getElementById("nameSpouse");
@@ -28,7 +28,6 @@ function validateForm(event) {
             }
         }
     }
-
 
     if (status.value == "na") {
         if (errorCount == 0) {
@@ -53,9 +52,8 @@ function validateForm(event) {
         event.preventDefault();
         firstError.focus();
     } else {
-        
         errorSpan.style.display = 'none';
-        alert("Thank You");
+        alert("Thank You!");
     }
 }
 
@@ -99,7 +97,7 @@ function statusMarried(status) {
     }
 }
 
-// for resetting the values into a default value
+// for resetting all of the values to a default value
 function resetButton() {
     var nameSpouse = document.getElementById('nameSpouse');
     nameSpouse.readOnly = true
