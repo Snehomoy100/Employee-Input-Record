@@ -1,6 +1,4 @@
 var firstError = "";
-
-
 var errorCount = 0;
 
 window.onload = function () {
@@ -9,6 +7,7 @@ window.onload = function () {
     document.getElementById('nameSpouse').style.backgroundColor = "#8e8d8d";
 }
 
+// for validation checking over the whole form
 function validateForm(event) {
     errorCount = 0;
 
@@ -30,14 +29,6 @@ function validateForm(event) {
         }
     }
 
-
-    /* if (gender.checked != true) {
-         if (errorCount == 0) {
-             errorCount = errorCount + 1;
-             firstError = gender;
-             alert("Please Select Your Gender");
-         }
-     }*/
 
     if (status.value == "na") {
         if (errorCount == 0) {
@@ -68,6 +59,7 @@ function validateForm(event) {
     }
 }
 
+// for the validation check over the values of the form
 function validateValue(val) {
     var len = val.value.trim().length;
     if (len != 0 || val != 'na') {
@@ -77,6 +69,8 @@ function validateValue(val) {
     }
 }
 
+
+// for omitting out the white spaces 
 function checkNullEmpty(inputValue) {
     var len = inputValue.value.trim().length;
     var fieldName = inputValue.getAttribute('displayName');
@@ -92,6 +86,7 @@ function checkNullEmpty(inputValue) {
     return true;
 }
 
+// for the conditional editing on spouse nameß
 function statusMarried(status) {
     var nameSpouse = document.getElementById('nameSpouse');
     if (status == "married") {
@@ -104,6 +99,7 @@ function statusMarried(status) {
     }
 }
 
+// for resetting the values into a default value
 function resetButton() {
     var nameSpouse = document.getElementById('nameSpouse');
     nameSpouse.readOnly = true
