@@ -84,7 +84,7 @@ function checkNullEmpty(inputValue) {
     return true;
 }
 
-// for the conditional editing on spouse nameß
+// for the conditional editing on spouse name
 function statusMarried(status) {
     var nameSpouse = document.getElementById('nameSpouse');
     if (status == "married") {
