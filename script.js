@@ -22,10 +22,8 @@ function validateForm(event) {
 
 
     if (checkNullEmpty(firstNa)) {
-        if (checkNullEmpty(middleNa)) {
-            if (checkNullEmpty(lastNa)) {
-
-            }
+        if (checkNullEmpty(lastNa)) {
+            
         }
     }
 

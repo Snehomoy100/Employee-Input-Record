@@ -1,15 +1,18 @@
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     background-color: #758283;
+    height: 100vh;
 }
+
 
 .header {
     display: flex;
     height: 100%;
     background-color: white;
     justify-content: flex-start;
-    padding-left: 18%;
+    padding-top: 5%;
+    padding-left: 22%;
 }
 
 .form-container {
@@ -35,8 +38,8 @@ select {
 }
 
 .table-container {
-    padding: 5px;
-    width: 100%;
+    padding: 70px;
+    
 }
 
 #main-container {
@@ -44,10 +47,14 @@ select {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
 }
 
 span {
-    font-size: 12px;
+    font-size: 14px;
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -61,7 +68,7 @@ p {
 .left-side {
     display: block;
     margin: 8px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -74,7 +81,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 10px;
+    font-size: 12px;
     margin-right: 10px;
 }
 
@@ -181,7 +188,7 @@ option {
 
 .footer {
     padding: 5px;
-    background-color: #CAD5E2;
+    background-color: white;
 }
 
 .footer.curve-border {
