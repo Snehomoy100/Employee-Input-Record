@@ -12,18 +12,19 @@ function validateForm(event) {
     errorCount = 0;
 
     var firstNa = document.getElementById("firstName");
-    var middleNa = document.getElementById("middleName");
+    // var middleNa = document.getElementById("middleName");
     var lastNa = document.getElementById("lastName");
 
     // var gender = document.getElementById("gender");
     var status = document.getElementById('maritalStatus');
 
     var spouseNa = document.getElementById("nameSpouse");
-
-
+    
+    var errorSpan = document.getElementById('error-span');
+    
     if (checkNullEmpty(firstNa)) {
         if (checkNullEmpty(lastNa)) {
-            
+
         }
     }
 
@@ -45,10 +46,15 @@ function validateForm(event) {
         }
     }
     if (errorCount > 0) {
-        var errorSpan = document.getElementById('error-span');
         errorSpan.style.display = 'flex';
         event.preventDefault();
+        if(errorSpan) {
+            errorSpan.addEventListener('keypress', event => {
+            console.log(event);
+        } );
+    }
         firstError.focus();
+        
     } else {
         errorSpan.style.display = 'none';
         alert("Thank You!");
