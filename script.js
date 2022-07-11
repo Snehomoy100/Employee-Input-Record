@@ -50,7 +50,7 @@ function validateForm(event) {
         event.preventDefault();
         if(errorSpan) {
             errorSpan.addEventListener('keypress', event => {
-            console.log(event);
+            console.log(event); // logging the info regarding the event
         } );
     }
         firstError.focus();
