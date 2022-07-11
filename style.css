@@ -1,6 +1,7 @@
 body {
-    font-family: Georgia, serif;
-    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    background-color: #758283;
 }
 
 .header {
@@ -8,17 +9,20 @@ body {
     height: 100%;
     background-color: white;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 18%;
 }
 
 .form-container {
-    background-color: #E6E2D9;
-    width: 30%;
+    background-color: #CAD5E2;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
 }
 
 .header,
 .form-container {
     border-radius: 5px;
+    background-color: #CAD5E2;
 }
 
 input,
@@ -26,7 +30,7 @@ textarea,
 select {
     border-radius: 2px;
     background: transparent;
-    border: 1px solid gray;
+    border: 1px solid #758283;
     margin: 1px;
 }
 
@@ -43,19 +47,21 @@ select {
 }
 
 span {
-    font-size: 9px;
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 p {
     display: flex;
     margin: 8px;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .left-side {
     display: block;
     margin: 8px;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -68,7 +74,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 8px;
+    font-size: 10px;
     margin-right: 10px;
 }
 
@@ -145,6 +151,7 @@ option {
     width: 100%;
 }
 
+
 .bottom-button {
     display: flex;
     justify-content: space-around;
@@ -174,7 +181,7 @@ option {
 
 .footer {
     padding: 5px;
-    background-color: white;
+    background-color: #CAD5E2;
 }
 
 .footer.curve-border {
